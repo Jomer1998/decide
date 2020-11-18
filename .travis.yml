@@ -16,9 +16,14 @@ python:
   - "3.6"
 virtualenv:
   system_site_packages: true
+env:
+  - DJANGO_VERSION=2.0
+  - DJANGO_VERSION=2.2.6
 install:
   - pip install -r requirements.txt
   - pip install codacy-coverage
+  - pip install -q Django==$DJANGO_VERSION
+  - python setup.py -q install
 script:
   - cd decide
   - coverage run --branch --source=. ./manage.py test --keepdb --with-xunit
