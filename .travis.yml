@@ -35,3 +35,8 @@ notifications:
       - josescrue@alum.us.es
     on_success: always # default: change
     on_failure: always # default: always
+deploy:
+  provider: heroku
+  app: decide-josescrue-git-p3
+  strategy: git
+  api_key: $HEROKU_AUTH_TOKEN
