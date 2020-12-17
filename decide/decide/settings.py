@@ -165,7 +165,7 @@ KEYBITS = 256
 ALLOWED_VERSIONS = ['v1', 'v2']
 DEFAULT_VERSION = 'v1'
 
-BASEURL = 'https://decide-josescrue-git-p3.herokuapp.com'
+BASEURL = 'https://decide-josescrue-git-p3-pre.herokuapp.com'
 
 try:
     from local_settings import *
